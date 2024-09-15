@@ -70,3 +70,7 @@ fieldset {
   border: none;
   border-radius: 6px;
 }
+
+.form__discount-input:disabled {
+  background-color: #EEEEEE;
+}
