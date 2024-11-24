@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
+    <title>ShopOnline</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__list">
+          <div class="header__logo">
+            <img class="header__logo-img" src="img/logo.png" alt="logo" />
+          </div>
+          <div class="header__btn">
+            <button class="header__btn-menu">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_8254_14)">
+                  <path
+                    d="M3 18H9V16H3V18ZM3 6V8H21V6H3ZM3 13H15V11H3V13Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_8254_14">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Меню
+            </button>
+          </div>
+          <div class="header__search">
+            <div class="header__search-wrapper">
+              <input
+                class="header__search-input"
+                type="text"
+                placeholder="Я ищу..."
+              />
+            </div>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-list-item">
+                <a
+                  class="header__nav-list-link header__nav-list-profile"
+                  href="#"
+                  ><span class="header__nav-list-item-none">Профиль</span></a
+                >
+              </li>
+              <li class="header__nav-list-item">
+                <a class="header__nav-list-link header__nav-list-cart" href="#"
+                  ><span class="header__nav-list-item-none">Корзина</span></a
+                >
+              </li>
+              <li class="header__nav-list-item">
+                <a
+                  class="header__nav-list-link header__nav-list-favorites"
+                  href="#"
+                  ><span class="header__nav-list-item-none">Избранное</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="content">
+        <div class="container">
+          <div class="content__wrapper">
+            <div class="content__banner">
+                <h1 class="content__banner-title">-50% на все ноутбуки</h1>
+                <div class="content__banner-timer">
+                  <p class="content__banner-timer-text">До конца акции:</p>
+                  <p class="content__banner-timer-date">
+                    <span class="content__banner-timer-number">3</span
+                    >дня
+                  </p>
+                  <p class="content__banner-timer-hour">
+                    <span class="content__banner-timer-number">8</span
+                    >часов
+                  </p>
+                  <p class="content__bannertimer-min">
+                    <span class="content__banner-timer-number">43</span
+                    >минуты
+                  </p>
+              </div>
+            </div>
+
+            <ul class="content__pictures">
+              <li class="content__pictures-item content__pictures-book">
+                <span class="content__pictures-text-big">Книга</span> – лучший подарок
+              </li>
+              <li class="content__pictures-item content__pictures-watch">
+                Время скидок!
+              </li>
+              <li
+                class="content__pictures-item content__pictures-shoe-red"
+              ></li>
+              <li class="content__pictures-item content__pictures-shoes">
+                <div class="content__pictures-shoes-text">
+                  Вторая пара кроссовок
+                  <span class="content__pictures-shoes-big">в подарок!</span>
+                </div>
+              </li>
+              <li class="content__pictures-item content__pictures-presents">
+                <p class="content__pictures-presents-text">
+                  Идеи новогодних подарков
+                </p>
+              </li>
+              <li class="content__pictures-item content__pictures-laptop">
+                Выгодно в декабре!
+              </li>
+              <li class="content__pictures-item content__pictures-date">
+                <div class="content__pictures-date-text">
+                  Новогодние украшения
+                </div>
+              </li>
+              <li class="content__pictures-item content__pictures-girl"></li>
+              <li class="content__pictures-item content__pictures-spray">
+                На бытовую химию
+              </li>
+              <li class="content__pictures-item content__pictures-balls"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

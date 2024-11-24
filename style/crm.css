@@ -1,28 +1,19 @@
-body {
-  font-family: "Inter";
-  text-transform: uppercase;
-  color: #6e6893;
-}
-.container {
+.form {
   max-width: 792px;
   max-height: 823px;
   padding: 0;
   margin: 0;
+  font-family: "Inter";
+  text-transform: uppercase;
+  color: #6e6893;
 }
 
-input,
-textarea,
+.form__input,
 .form {
   display: flex;
   justify-content: center;
   background-color: #f2f0f9;
   border: none;
-}
-
-fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
 }
 
 .form__fieldset {
@@ -73,6 +64,6 @@ fieldset {
   border-radius: 6px;
 }
 
-.form__discount-input:disabled {
+.main__form_discount-input:disabled {
   background-color: #EEEEEE;
 }

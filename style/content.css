@@ -1,0 +1,638 @@
+.content {
+  --gradient: linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.content__banner {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 240px);
+  margin-bottom: 60px;
+  background-image: var(--gradient), url(/img/img-content/laptop-banner.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.content__banner-title {
+  position: absolute;
+  grid-column: 1 / 4;
+  grid-row: 1/2;
+  justify-self: end;
+  align-self: end;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.content__banner-timer {
+  grid-column: 3 /5;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: end;
+  display: grid;
+  font-size: 16px;
+  font-weight: 700;
+  grid-template-areas:
+    "text text text"
+    "date hour min";
+  column-gap: 30px;
+}
+
+.content__banner-timer-time {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.content__banner-timer-number {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.content__banner-timer-text {
+  grid-area: text;
+}
+
+.content__banner-timer-date {
+  grid-area: date;
+}
+
+.content__banner-timer-hour {
+  grid-area: hour;
+}
+
+.content__banner-timer-min {
+  grid-area: min;
+}
+
+.content__pictures {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 245px);
+  gap: 60px;
+  grid-template-areas:
+    "book watch shoe shoe presents presents"
+    "shoe-red shoe-red shoe shoe laptop laptop"
+    "date date date date girl spray"
+    "date date date date girl balls";
+    
+}
+
+.content__pictures-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.content__pictures-book {
+  background-image: var(--gradient), url(/img/img-content/book.jpeg);
+  grid-area: book;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  align-content: end;
+  font-size: 30px;
+}
+
+.content__pictures-text-big {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.content__pictures-watch {
+  background-image: var(--gradient), url(/img/img-content/watch.jpeg);
+  grid-area: watch;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 130%;
+  padding-left: 14px;
+  padding-top: 78px;
+}
+
+.content__pictures-watch::after {
+  content: "-25%";
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  background-color: #ffbd13;
+  border-radius: 50%;
+  align-content: center;
+  text-align: center;
+  right: 20px;
+  bottom: 20px;
+}
+
+.content__pictures-shoe-red {
+  background-image: var(--gradient), url(/img/img-content/shoe-red.jpeg);
+  grid-area: shoe-red;
+}
+
+.content__pictures-shoe-red::after {
+  content: "-40%";
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  background-color: #ffbd13;
+  border-radius: 50%;
+  align-content: center;
+  text-align: center;
+  left: 20px;
+  top: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.content__pictures-shoes {
+  position: relative;
+  background-image: var(--gradient), url(/img/img-content/shoes.jpeg);
+  grid-area: shoe;
+  display: flex;
+  justify-content: center;
+}
+
+.content__pictures-shoes-text {
+  position: absolute;
+  max-height: 178px;
+  max-width: 90%;
+  height: 100%;
+  width: 100%;
+  padding: 23px 26px;
+  background-color: #38c0eb;
+  border-radius: 20px;
+  bottom: 22px;
+  font-size: 40px;
+}
+
+.content__pictures-shoes-big {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.content__pictures-presents {
+  background-image: var(--gradient), url(/img/img-content/presents.jpeg);
+  grid-area: presents;
+}
+
+.content__pictures-presents-text {
+  position: absolute;
+  max-width: 360px;
+  font-size: 40px;
+  font-weight: 700;
+  padding-left: 30px;
+  padding-top: 110px;
+}
+
+.content__pictures-laptop {
+  background-image: var(--gradient), url(/img/img-content/laptop.jpeg);
+  grid-area: laptop;
+  font-size: 40px;
+  font-weight: 700;
+  padding-left: 30px;
+  padding-top: 158px;
+}
+
+.content__pictures-laptop::after {
+  content: "-15%";
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  background-color: #ffbd13;
+  border-radius: 50%;
+  align-content: center;
+  text-align: center;
+  right: 20px;
+  bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.content__pictures-date {
+  background-image: var(--gradient), url(/img/img-content/2022.jpeg);
+  grid-area: date;
+  position: relative;
+}
+
+.content__pictures-date-text {
+  display: flex;
+  position: absolute;
+  max-width: 643px;
+  max-height: 115px;
+  width: 100%;
+  height: 100%;
+  bottom: 50px;
+  left: 50px;
+  background-color: #fff;
+  border-radius: 20px;
+  color: #f91155;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__pictures-girl {
+  background-image: var(--gradient), url(/img/img-content/girl.jpeg);
+  grid-area: girl;
+}
+
+.content__pictures-girl::after {
+  content: "-55%";
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  background-color: #ffbd13;
+  border-radius: 50%;
+  align-content: center;
+  text-align: center;
+  right: 20px;
+  bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.content__pictures-spray {
+  background-image: var(--gradient), url(/img/img-content/spray.jpeg);
+  grid-area: spray;
+  background-position: 75%;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 147px;
+  padding-left: 20px;
+}
+
+.content__pictures-spray::after {
+  content: "-25%";
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  background-color: #ffbd13;
+  border-radius: 50%;
+  align-content: center;
+  text-align: center;
+  left: 20px;
+  top: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.content__pictures-balls {
+  background-image: var(--gradient), url(/img/img-content/balls.jpeg);
+  grid-area: balls;
+  background-size: 200%;
+  background-position: 0% 100%;
+  transform: scaleX(-1);
+}
+
+@media (max-width: 1024px) {
+  .content__banner {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 157px);
+    margin-bottom: 22px;
+    border-radius: 16px;
+  }
+
+  .content__banner-title {
+    grid-column: 1 / 3;
+    justify-self: end;
+    align-self: end;
+    font-size: 40px;
+    left: 80px;
+    top: 80px;
+  }
+
+  .content__banner-timer {
+    grid-column: 2 /4;
+    grid-row: 2/3;
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
+  .content__banner-timer {
+    text-align: center;
+    align-self: center;
+  }
+
+  .content__banner-timer-time {
+    font-size: 20px;
+  }
+
+  .content__banner-timer-number {
+    font-size: 40px;
+    margin-right: 6px;
+  }
+
+  .content__pictures {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 217px);
+    gap: 24px;
+    grid-template-areas:
+      "book watch shoe shoe"
+      "shoe-red shoe-red shoe shoe"
+      "presents presents girl spray"
+      "laptop laptop girl balls"
+      "date date date date"
+      "date date date date";
+  }
+
+  .content__pictures-watch::after,
+  .content__pictures-laptop::after,
+  .content__pictures-girl::after {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .content__pictures-shoe-red::after,
+  .content__pictures-spray::after {
+    left: 10px;
+    top: 10px;
+  }
+
+  .content__pictures-book {
+    padding-right: 18px;
+    padding-left: 9px;
+    font-size: 24px;
+  }
+
+  .content__pictures-text-big {
+    font-size: 30px;
+  }
+
+  .content__pictures-watch {
+    font-size: 24px;
+    padding-left: 9px;
+    padding-top: 58px;
+  }
+
+  .content__pictures-shoes-text {
+    position: absolute;
+    max-height: 146px;
+    padding: 25px 29px;
+    font-size: 30px;
+  }
+
+  .content__pictures-shoes-big {
+    font-size: 40px;
+  }
+
+  .content__pictures-presents {
+    padding-bottom: 20px;
+  }
+
+  .content__pictures-presents-text {
+    font-size: 30px;
+  }
+
+  .content__pictures-laptop {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  .content__pictures-spray {
+    font-size: 20px;
+    padding-top: 177px;
+    padding-left: 14px;
+  }
+
+  .content__pictures-date-text {
+    max-width: 513px;
+    max-height: 83px;
+    bottom: 39px;
+    left: 30px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+    .content__banner {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 157px);
+        margin-bottom: 40px;
+        border-radius: 12px;
+      }
+    
+      .content__banner-title {
+        grid-column: 1 / 4;
+        font-size: 30px;
+        top: 64px;
+      }
+    
+      .content__banner-timer {
+        font-size: 16px;
+      }
+    
+      .content__banner-timer-number {
+        font-size: 30px;
+        margin-right: 3px;
+      }
+    
+      .content__pictures {
+        grid-template-columns: 20% 20% 31% 20%;
+        grid-template-rows: 140px 140px 60px 60px 60px 60px 337px;
+        gap: 20px;
+        grid-template-areas:
+          "book watch shoe shoe"
+          "shoe-red shoe-red shoe shoe"
+          "presents presents shoe shoe"
+          "presents presents girl spray"
+          "laptop laptop girl spray"
+          "laptop laptop girl balls"
+          "date date date date";
+      }
+    
+      .content__pictures-watch::after,
+      .content__pictures-laptop::after,
+      .content__pictures-girl::after,
+      .content__pictures-shoe-red::after,
+      .content__pictures-spray::after  {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+      }
+    
+      .content__pictures-book {
+        padding-right: 4px;
+        padding-left: 10px;
+        font-size: 20px;
+      }
+    
+      .content__pictures-text-big {
+        font-size:26px;
+      }
+    
+      .content__pictures-watch {
+        font-size: 16px;
+        padding-left: 5px;
+        padding-top: 15px;
+      }
+
+      .content__pictures-shoes-text {
+        position: absolute;
+        max-height: 61px;
+        max-width: 360px;
+        padding: 16px 28px;
+        font-size: 16px;
+      }
+    
+      .content__pictures-shoes-big {
+        font-size: 26px;
+      }
+    
+      .content__pictures-presents-text {
+        max-width: 180px;
+        font-size: 16px;
+        padding-top: 82px;
+      }
+    
+      .content__pictures-laptop {
+        font-size: 16px;
+        padding-top: 101px;
+        padding-left: 20px;
+      }
+    
+      .content__pictures-spray {
+        font-size: 16px;
+        padding-top: 88px;
+        padding-left: 14px;
+      }
+
+      .content__pictures-balls {
+        background-size: 100%;
+    }
+
+    .content__pictures-girl {
+      background-position: top;
+  }
+    
+      .content__pictures-date-text {
+        max-width: 347px;
+        max-height: 68px;
+        bottom: 26px;
+        left: 26px;
+        font-size: 20px;
+      }
+}
+
+@media (max-width: 500px) {
+  .content__banner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 113px);
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  .content__banner-timer {
+    grid-column: 1 /3;
+    grid-row: 3/4;
+    align-self: center;
+    font-size: 12px;
+    column-gap: 8px;
+  }
+
+  .content__banner-title {
+    grid-column: 1 / 3;
+    font-size: 22px;
+    top: 50px;
+    width: 100%;
+    left: 10%;
+  }
+
+  .content__banner-timer {
+    font-size: 8px;
+  }
+
+  .content__banner-timer-number {
+    font-size: 20px;
+    margin-right: 2px;
+  }
+
+  .content__pictures {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 130px 118px 280px 118px 118px 130px 130px 123px;
+    gap: 20px;
+    grid-template-areas:
+      "book watch"
+      "shoe-red shoe-red"
+      "shoe shoe"
+      "presents presents"
+      "laptop laptop"
+      "girl spray"
+      "girl balls"
+      "date date";
+  }
+
+  .content__pictures-book {
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .content__pictures-text-big {
+    font-size: 16px;
+  }
+
+  .content__pictures-watch {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-top: 28px;
+  }
+
+  .content__pictures-shoes-text {
+    max-height: 36px;
+    max-width: 260px;
+    padding: 9px 25px;
+    font-size: 12px;
+    bottom: 10px;
+  }
+
+  .content__pictures-shoes-big {
+    font-size: 16px;
+  }
+
+  .content__pictures-presents-text {
+    max-width: 100%;
+    font-size: 12px;
+    padding-top: 88px;
+  }
+
+  .content__pictures-laptop {
+    font-size: 12px;
+    padding-top: 88px;
+    padding-left: 10px;
+  }
+
+  .content__pictures-spray {
+    font-size: 12px;
+    padding-top: 106px;
+    padding-left: 9px;;
+  }
+
+  .content__pictures-balls {
+    background-size: 200%;
+}
+
+.content__pictures-girl {
+  background-position: top;
+}
+
+  .content__pictures-date-text {
+    max-width: 250px;
+    max-height: 30px;
+    bottom: 10px;
+    left: 15px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+}

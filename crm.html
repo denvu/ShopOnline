@@ -9,96 +9,100 @@
     <title>CRM-ShopOnline</title>
   </head>
   <body>
-    <div class="container">
-      <form
-        class="form"
-        action="https://jsonplaceholder.typicode.com/posts"
-        method="post"
-      >
-        <fieldset>
-          <h1 class="form__title">Добавить товар</h1>
-
-          <fieldset class="form__fieldset">
-            <fieldset>
-              <label class="form__input-name" for="name">Наименование</label>
-              <br />
-              <input class="form__input" type="text" name="name" id="name" />
-            </fieldset>
-
-            <fieldset>
-              <label class="form__input-name" for="category">Категория</label>
-              <br />
-              <input
-                class="form__input"
-                type="text"
-                name="category"
-                id="category"
-              />
-            </fieldset>
-
-            <fieldset>
-              <label class="form__input-name" for="units"
-                >Единицы измерения</label
-              >
-              <br />
-              <input class="form__input" type="text" name="units" id="units" />
-            </fieldset>
-
-            <fieldset>
-              <label class="form__input-name" for="discount">Дисконт</label>
-              <br />
-              <label class="form__discount"
-                ><input
-                  class="form__checkbox"
-                  type="checkbox"
-                  id="checkbox-discount" />
-                <input
-                  class="form__input form__discount-input"
-                  type="text"
-                  disabled
-              /></label>
-            </fieldset>
-
-            <fieldset>
-              <label class="form__input-name" for="description">Описание</label>
-              <br />
-              <textarea
-                class="form__input form__description"
-                name="description"
-                id="description"
-              ></textarea>
-            </fieldset>
-
-            <fieldset>
-              <label class="form__input-name" for="count">Количество</label>
-              <br />
-              <input
-                class="form__input"
-                type="number"
-                name="count"
-                id="count"
-              />
-            </fieldset>
-
-            <fieldset>
-              <label class="form__input-name" for="price">Цена</label>
-              <br />
-              <input
-                class="form__input"
-                type="number"
-                name="price"
-                id="price"
-              />
-            </fieldset>
-          </fieldset>
-
+    <main class="main">
+      <div class="container">
+        <div class="form">
+          <form
+          class="form__list"
+          action="https://jsonplaceholder.typicode.com/posts"
+          method="post"
+        >
           <fieldset>
-            <p>
-              <button class="btn-add">Добавить товар</button>
-            </p>
+            <h1 class="form__title">Добавить товар</h1>
+  
+            <fieldset class="form__fieldset">
+              <fieldset>
+                <label class="form__input-name" for="name">Наименование</label>
+                <br />
+                <input class="form__input" type="text" name="name" id="name" />
+              </fieldset>
+  
+              <fieldset>
+                <label class="form__input-name" for="category">Категория</label>
+                <br />
+                <input
+                  class="form__input"
+                  type="text"
+                  name="category"
+                  id="category"
+                />
+              </fieldset>
+  
+              <fieldset>
+                <label class="form__input-name" for="units"
+                  >Единицы измерения</label
+                >
+                <br />
+                <input class="form__input" type="text" name="units" id="units" />
+              </fieldset>
+  
+              <fieldset>
+                <label class="form__input-name" for="discount">Дисконт</label>
+                <br />
+                <label class="form__discount"
+                  ><input
+                    class="form__checkbox"
+                    type="checkbox"
+                    id="checkbox-discount" />
+                  <input
+                    class="form__input form__discount-input"
+                    type="text"
+                    disabled
+                /></label>
+              </fieldset>
+  
+              <fieldset>
+                <label class="form__input-name" for="description">Описание</label>
+                <br />
+                <textarea
+                  class="form__input form__description"
+                  name="description"
+                  id="description"
+                ></textarea>
+              </fieldset>
+  
+              <fieldset>
+                <label class="form__input-name" for="count">Количество</label>
+                <br />
+                <input
+                  class="form__input"
+                  type="number"
+                  name="count"
+                  id="count"
+                />
+              </fieldset>
+  
+              <fieldset>
+                <label class="form__input-name" for="price">Цена</label>
+                <br />
+                <input
+                  class="form__input"
+                  type="number"
+                  name="price"
+                  id="price"
+                />
+              </fieldset>
+            </fieldset>
+  
+            <fieldset>
+              <p>
+                <button class="btn-add">Добавить товар</button>
+              </p>
+            </fieldset>
           </fieldset>
-        </fieldset>
-      </form>
-    </div>
+        </form>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
